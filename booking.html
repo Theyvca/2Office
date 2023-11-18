@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+    <style>
+              *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+            }
+            .home{
+                position: fixed;
+                height:100vh;
+                width: 100%;
+                background: rgb(53, 121, 139);
+                
+            }  
+            .form-container{
+                position: absolute;
+                height: 50%;
+                width: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 101;
+                background:rgb(53, 121, 139) ;
+                padding: 25px;
+                border: 2px solid #fff;
+                border-radius: 8px;
+                
+            }
+            .form-container h2{
+                font-size: 25px;
+                color: #fff;
+                text-align: center;
+            }
+            .form-container .middle{
+                color: #fff;
+                align-items: center;
+                position: relative;
+                margin-top: 100px;
+                width: 100%;
+                height: 40px;
+                margin-left: 250px;
+            }
+            .button{
+                padding: 6px 24px;
+                border: 2px solid #fff;
+                background: transparent;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+            .button a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .button:active{
+                transform: scale(0.98) ;
+            }
+            select{
+                border: 2px solid rgb(53, 121, 139);
+                color: rgb(53, 121, 139);
+                font-size: 20px;
+            }
+            input{
+                border: 2px solid rgb(53, 121, 139);
+                color: rgb(53, 121, 139);
+                font-size: 20px;
+                
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div style="float: right; margin-right: 50px; margin-top: 50px;">
+            <button style="border: 2px solid #fff;padding: 6px 25px;background: rgb(53, 121, 139); border-radius: 6px;"><a style="color: #fff; text-decoration: none;font-size: 20px;
+                font-weight: 500;" href="home.html">Home</a></button>
+            
+        </div>
+        <div class="form-container">
+            <h2>Select your slots</h2>
+            <div class="middle">
+                <label style="font-size: 25px;"> Date </label>
+                <input type="date" required>
+                <select required>
+                    <option> Shift-1</option>
+                    <option> Shift-2</option>
+                    <option> Shift-3</option>
+                    <option> Shift-4</option>
+                </select>
+                <button class="button"><a href="slots.html">Show slots</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
